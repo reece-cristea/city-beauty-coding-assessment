@@ -1,0 +1,29 @@
+.continue-button {
+    box-sizing: border-box;
+    background-color: #E2C47C;
+    text-align: left;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 83px;
+    width: 500px;
+    display: flex;
+}
+
+.continue-text {
+    margin-left: 2rem;
+    color: rgb(44, 42, 42);
+}
+
+.continue-arrow {
+    width:100%;
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+}
+
+@media (width <= 375px) {
+    .continue-button {
+        width: 335px;
+    }
+}

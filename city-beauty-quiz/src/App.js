@@ -1,28 +1,54 @@
 
 import './App.css';
+import { IntroPage, ProblemAreaPage, HydratingIngredientsPage, SkinPage, ExplanationPage, MoisturizePage, DailyBodyCarePage, IssuesPage } from './containers';
+import React, {useState} from "react";
 
 function App() {
 
-  const goalSelections = ["Remove Crepey Skin", "Relieve Dry, Flaky Skin", "Get Firmer, Tighter, Younger Looking Skin"];
-  const goalPics = ["https://city-beauty-quiz-imgs.s3.amazonaws.com/intro-crepey-skin.png", "https://city-beauty-quiz-imgs.s3.amazonaws.com/intro-dry-flaky.png", "https://city-beauty-quiz-imgs.s3.amazonaws.com/intro-firmer.png"]
+  const [page, setPage] = useState(0);
+
+  const [quizAnswers, setQuizAnswers] = useState({
+    goal: undefined,
+    problemArea: undefined,
+    hydratingMaterials: undefined,
+    skinType: undefined,
+    moisturizeLevel: undefined,
+    dailyBodyCareTime: undefined,
+    skincareIssues: undefined
+  })
+  
+  const PageDisplay = () => {
+    if (page === 0) {
+      return <IntroPage setPage={setPage} setQuizAnswers={setQuizAnswers}/>
+    } else if (page === 1) {
+      return <ProblemAreaPage setPage={setPage} setQuizAnswers={setQuizAnswers}/>
+    } else if (page === 2) {
+      return <HydratingIngredientsPage setPage={setPage} setQuizAnswers={setQuizAnswers}/>
+    } else if (page === 3) {
+      return <SkinPage setPage={setPage} setQuizAnswers={setQuizAnswers}/>
+    } else if (page === 4) {
+      return <ExplanationPage setPage={setPage} setQuizAnswers={setQuizAnswers}/>
+    } else if (page === 5) {
+      return <MoisturizePage setPage={setPage} setQuizAnswers={setQuizAnswers}/>
+    } else if (page === 6) {
+      return <DailyBodyCarePage setPage={setPage} setQuizAnswers={setQuizAnswers}/>
+    } else if (page === 7) {
+      return <IssuesPage setPage={setPage} setQquizAnswers={setQuizAnswers}/>
+    } 
+  }
 
   return (
     <div className="App">
-      <img className='logo' src='https://city-beauty-quiz-imgs.s3.amazonaws.com/city-beauty-logo.png'></img>
-      <div className='intro-page-container'>
-        <div className='desc-container'>
-          <h1 className='desc-title'>Achieve Perfectly <i>Smooth</i>, <i>Youthful</i> Skin</h1>
-          <p className='desc-text'>Get a personalized skin care treatment</p>
-        </div>
-        <div className='selections'>
-          <h2 className='goal-title'>Choose Your Goal</h2>
-          {goalSelections.map((goal, i) => {
-            return <div className="goal-selection"><h3 className='goal'>{goal}</h3><img className='goal-img' src={goalPics[i]} alt='Skin Goal Selection'></img></div>
-          })}
-        </div>
+      <div className='header'>
+        <img className='city-beauty-logo' src='https://city-beauty-quiz-imgs.s3.amazonaws.com/city-beauty-logo.png' alt="City Beauty Logo"></img>
       </div>
+      <div className='form-content'>
+        {PageDisplay()}
+      </div>
+      
     </div>
   );
+
 }
 
 export default App;

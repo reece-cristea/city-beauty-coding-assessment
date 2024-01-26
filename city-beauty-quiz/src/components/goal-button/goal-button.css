@@ -1,0 +1,37 @@
+
+.goal{
+    margin: auto 1rem;
+    width: auto;
+    grid-column: span 2;
+}
+  
+.goal-img {
+    height: 135px;
+    width: auto;
+    margin-left: auto;
+    grid-column: span;
+}
+  
+.goal-selection {
+    box-sizing: border-box;
+    background-color: #556479;
+    text-align: left;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 135px;
+}
+  
+.goal-selection:hover {
+    background-color: #394A62;
+}
+
+@media (width <= 375px) {
+    .goal-selection {
+        width: 335px;
+        height: 135px;
+    }
+}
+

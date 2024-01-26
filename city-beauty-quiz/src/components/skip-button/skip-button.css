@@ -1,0 +1,12 @@
+.skip-button {
+    box-sizing: border-box;
+    text-align: left;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 83px;
+    width: 500px;
+    display: flex;
+    border: solid 2px white;
+    justify-content: center;
+}
