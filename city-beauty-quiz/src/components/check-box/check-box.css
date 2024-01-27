@@ -1,0 +1,18 @@
+
+.check-box {
+    height: 25px;
+    width: 50px;
+    border: solid 2px white;
+    margin-left: 1rem;
+}
+
+.check-img {
+    height: 100%;
+    width: auto;
+    visibility: hidden;
+}
+
+.check-img-selected {
+    height: 100%;
+    width: auto;
+}

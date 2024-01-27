@@ -1,0 +1,17 @@
+.form {
+    width: 500px;
+    display: flex;
+    justify-content: start;
+    margin-top: 2rem;
+}
+
+.form-title {
+    width: 100%;
+    text-align: left;
+}
+
+@media (width <= 375px) {
+    .form {
+        width: 335px;
+    }
+}

@@ -1,8 +1,9 @@
 import React from 'react'
+import './HydratingIngredientsPage.css'
 
 const HydratingIngredientsPage = ({setPage}) => {
   return (
-    <div>HydratingIngredientsPage</div>
+    <div className='form'>HydratingIngredientsPage</div>
   )
 }
 

@@ -10,6 +10,19 @@
     display: flex;
 }
 
+.disabled-continue-button {
+    box-sizing: border-box;
+    background-color: #E2C47C;
+    opacity: 60%;
+    text-align: left;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 83px;
+    width: 500px;
+    display: flex;
+}
+
 .continue-text {
     margin-left: 2rem;
     color: rgb(44, 42, 42);
@@ -26,4 +39,8 @@
     .continue-button {
         width: 335px;
     }
+}
+
+.continue-button:hover {
+    background-color: ;
 }
