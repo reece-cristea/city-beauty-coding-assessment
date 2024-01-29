@@ -35,13 +35,13 @@
 }
 
 
-@media (min-width: 376px) {
+@media (min-width: 431px) {
   .intro-page-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (width <= 376px) {
+@media (width <= 430px) {
   .intro-page-container {
     margin-top: 1rem;
     width: 335px;

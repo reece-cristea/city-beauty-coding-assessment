@@ -31,9 +31,8 @@
     cursor: pointer;
 }
 
-.ib-text {
+.text {
     align-items: center;
-    justify-content: center;
     padding-left: 1rem;
     width: 100%;
 }

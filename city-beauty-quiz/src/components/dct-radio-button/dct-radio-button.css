@@ -1,4 +1,4 @@
-.toggle-button {
+.radio-button {
     box-sizing: border-box;
     background-color: #556479;
     text-align: left;
@@ -10,11 +10,11 @@
     display: flex;
 }
 
-.toggle-button:hover {
+.radio-button:hover {
     cursor: pointer;
 }
 
-.toggle-button-selected {
+.radio-button-selected {
     box-sizing: border-box;
     background-color: #556479;
     text-align: left;
@@ -27,27 +27,22 @@
     border: solid 2px #E2C47C;
 }
 
-.toggle-button-selected:hover {
+.radio-button-selected:hover {
     cursor: pointer;
 }
 
-.ib-text {
+.text {
     align-items: center;
-    justify-content: center;
     padding-left: 1rem;
     width: 100%;
 }
 
-.toggle-button:hover {
-    background-color: #394A62;
-}
-
 @media (width <= 430px) {
-    .toggle-button {
+    .radio-button {
         width: 335px;
     }
 
-    .toggle-button-selected {
+    .radio-button-selected {
         width: 335px;
     }
 

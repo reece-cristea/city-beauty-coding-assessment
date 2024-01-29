@@ -3,14 +3,16 @@
     display: flex;
     justify-content: start;
     margin-top: 2rem;
+    align-items: center;
 }
+
 
 .form-title {
     width: 100%;
     text-align: left;
 }
 
-@media (width <= 375px) {
+@media (width <= 430px) {
     .form {
         width: 335px;
     }

@@ -30,7 +30,7 @@
     
 }
 
-@media (width <= 375px) {
+@media (width <= 430px) {
     .goal-selection {
         width: 335px;
         height: 135px;

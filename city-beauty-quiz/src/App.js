@@ -27,13 +27,13 @@ function App() {
     } else if (page === 3) {
       return <SkinPage setPage={setPage} setQuizAnswers={setQuizAnswers}/>
     } else if (page === 4) {
-      return <ExplanationPage setPage={setPage} setQuizAnswers={setQuizAnswers}/>
+      return <ExplanationPage setPage={setPage}/>
     } else if (page === 5) {
       return <MoisturizePage setPage={setPage} setQuizAnswers={setQuizAnswers}/>
     } else if (page === 6) {
       return <DailyBodyCarePage setPage={setPage} setQuizAnswers={setQuizAnswers}/>
     } else if (page === 7) {
-      return <IssuesPage setPage={setPage} setQquizAnswers={setQuizAnswers}/>
+      return <IssuesPage setPage={setPage} setQuizAnswers={setQuizAnswers}/>
     } 
   }
 

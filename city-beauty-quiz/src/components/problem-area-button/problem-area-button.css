@@ -52,7 +52,7 @@
     width: auto;
 }
 
-@media (width <= 375px) {
+@media (width <= 430px) {
     .toggle-button {
         width: 335px;
     }

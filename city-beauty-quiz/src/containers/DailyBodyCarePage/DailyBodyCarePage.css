@@ -1,0 +1,18 @@
+.form {
+    width: 500px;
+    display: flex;
+    justify-content: start;
+    margin-top: 2rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.radio-button-group {
+    display: flex;
+    align-items: start;
+    width: 100%;
+}
+
+.form-content {
+    width: 100%;
+}

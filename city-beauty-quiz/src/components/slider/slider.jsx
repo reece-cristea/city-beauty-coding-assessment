@@ -1,25 +1,43 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Slider from '@mui/material/Slider';
+import './slider.css'
 
-const CBSlider = () => {
+const CBSlider = ({ setValue, valueLabels, range, minMaxLabels }) => {
 
-    const labels = ["Normal Skin", "Dry Skin", "Microwrinkles", "Scaly, Rough Skin", "Itchy, Irritated Skin", "Crepey Skin"]
 
     const displayLabel = (value) => {
-        return labels[value];
+        return valueLabels[value];
+    }
+
+    const setSkinType = (e) => {
+        setValue(e.target.value);
+        console.log(e.target.value);
     }
 
     return (
-        <Slider
-            aria-label="Skin Type"
-            defaultValue={0}
-            valueLabelDisplay="auto"
-            step={1}
-            marks
-            min={0}
-            max={5}
-            valueLabelFormat={displayLabel}
-        />
+        <div className="slider-container">
+            <Slider
+                aria-label="Skin Type"
+                defaultValue={0}
+                valueLabelDisplay="auto"
+                step={1}
+                marks
+                min={0}
+                max={range}
+                valueLabelFormat={displayLabel}
+                onChange={setSkinType}
+                sx={{ width: "80%" }}
+            />
+            <div className='labels'>
+                <p className='start-label'>
+                    {minMaxLabels[0]}
+                </p>
+                <p className='end-label'>
+                    {minMaxLabels[1]}
+                </p>
+            </div>
+        </div>
+
     )
 }
 

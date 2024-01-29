@@ -47,7 +47,7 @@
     margin-left: 1rem;
 }
 
-@media (width <= 375px) {
+@media (width <= 430px) {
     .toggle-button {
         width: 335px;
     }

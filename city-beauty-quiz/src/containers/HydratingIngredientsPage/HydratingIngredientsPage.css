@@ -11,7 +11,7 @@
     text-align: left;
 }
 
-@media (width <= 375px) {
+@media (width <= 430px) {
     .form {
         width: 335px;
     }
@@ -19,4 +19,5 @@
 
 hr.solid {
     border-top: 2px solid #556479;
+    width: 100%;
 }

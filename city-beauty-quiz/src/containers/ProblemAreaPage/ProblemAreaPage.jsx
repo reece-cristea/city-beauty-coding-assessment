@@ -37,7 +37,7 @@ const ProblemAreaPage = ({setPage, setQuizAnswers}) => {
 
   return (
     <div className="form">
-      <div>
+      <div children="form-content">
         <ProgressBar currentProgress={1} setPage={setPage}/>
         <h2 className='form-title'>Select problem areas</h2>
         {problemAreas.map((problemArea, i) => {
