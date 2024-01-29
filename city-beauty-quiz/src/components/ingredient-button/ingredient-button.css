@@ -41,17 +41,6 @@
     background-color: #394A62;
 }
 
-.imgDiv {
-    width: 70%;
-    display: flex;
-    justify-content: end;
-}
-
-.img {
-    height: 135px;
-    width: auto;
-}
-
 @media (width <= 375px) {
     .toggle-button {
         width: 335px;

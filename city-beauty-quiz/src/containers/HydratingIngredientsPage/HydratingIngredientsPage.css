@@ -3,6 +3,7 @@
     display: flex;
     justify-content: start;
     margin-top: 2rem;
+    flex-direction: column;
 }
 
 .form-title {
@@ -14,4 +15,8 @@
     .form {
         width: 335px;
     }
+}
+
+hr.solid {
+    border-top: 2px solid #556479;
 }

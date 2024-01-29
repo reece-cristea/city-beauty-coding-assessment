@@ -3,3 +3,7 @@ export {default as ProblemAreaButton} from './problem-area-button/problem-area-b
 export {default as ContinueButton} from './continue-button/continue-button'
 export {default as SkipButton} from './skip-button/skip-button'
 export {default as CheckBox} from './check-box/check-box'
+export {default as ProgressBar} from './progress-bar/progress-bar'
+export {default as NoneButton} from './none-button/none-button'
+export {default as IngredientButton} from './ingredient-button/ingredient-button'
+export {default as Slider} from './slider/slider'

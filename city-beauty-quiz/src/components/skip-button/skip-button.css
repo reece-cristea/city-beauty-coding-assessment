@@ -10,3 +10,13 @@
     border: solid 2px white;
     justify-content: center;
 }
+
+.skip-button:hover {
+    cursor: pointer;
+}
+
+@media (width <= 375px) {
+    .skip-button {
+        width: 335px;
+    }
+}

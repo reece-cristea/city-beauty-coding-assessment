@@ -41,15 +41,10 @@
     background-color: #394A62;
 }
 
-.imgDiv {
-    width: 70%;
-    display: flex;
-    justify-content: end;
-}
-
-.img {
-    height: 135px;
+.none-img {
+    height: 25px;
     width: auto;
+    margin-left: 1rem;
 }
 
 @media (width <= 375px) {

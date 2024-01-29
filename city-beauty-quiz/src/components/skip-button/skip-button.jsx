@@ -1,9 +1,9 @@
 import React from 'react'
 import './skip-button.css'
 
-const skipButton = () => {
+const skipButton = ({handleSkip}) => {
   return (
-    <div className='skip-button'>Skip</div>
+    <div className='skip-button' onClick={handleSkip}>Skip</div>
   )
 }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import './goal-button.css'
 
 const goalButton = ({ text, img, setPage, setQuizAnswers, goal }) => {
     return (

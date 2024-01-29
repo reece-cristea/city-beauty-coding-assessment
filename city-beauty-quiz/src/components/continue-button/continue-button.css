@@ -10,6 +10,10 @@
     display: flex;
 }
 
+.continue-button:hover {
+    cursor: pointer;
+}
+
 .disabled-continue-button {
     box-sizing: border-box;
     background-color: #E2C47C;
@@ -39,8 +43,8 @@
     .continue-button {
         width: 335px;
     }
-}
-
-.continue-button:hover {
-    background-color: ;
+    
+    .disabled-continue-button{
+        width: 335px;
+    }
 }

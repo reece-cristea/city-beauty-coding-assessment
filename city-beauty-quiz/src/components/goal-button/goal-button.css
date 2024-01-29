@@ -25,7 +25,9 @@
 }
   
 .goal-selection:hover {
+    cursor: pointer;
     background-color: #394A62;
+    
 }
 
 @media (width <= 375px) {
